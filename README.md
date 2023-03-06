@@ -1,1 +1,1 @@
-# fe-upload-react
+# fe-upload-react-egor-kushch
