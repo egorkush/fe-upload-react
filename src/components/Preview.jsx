@@ -15,23 +15,21 @@ const Preview = ({ files, removeFiles }) => {
 
     removeFiles(name)
   }
-  if(files.length === 0) {
-    return null
-  }
-  return (
-    <div className='preview' onClick={removeHandler}>
-      {files && files.map(file => (
-        <div className='preview-image' key={file.name + Date.now()}>
-          <div className='preview-remove' data-name={file.name}>&times;</div>
-          <img src={file.src} alt='uu' />
-          <div className='preview-info'>
-            <span>{file.name}</span>
-            <span>{formatBytes(file.size)}</span>
+   return files.length === 0
+     ? null
+     : <div className='preview' onClick={removeHandler}>
+        {files && files.map(file => (
+          <div className='preview-image' key={file.name + Date.now()}>
+            <div className='preview-remove' data-name={file.name}>&times;</div>
+            <img src={file.src} alt='uu' />
+            <div className='preview-info'>
+              <span>{file.name}</span>
+              <span>{formatBytes(file.size)}</span>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  )
+        ))}
+      </div>
+
 }
 
 export default Preview
