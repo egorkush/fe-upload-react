@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# This is a plugin for uploading images. Supported image formats: '.png', '.jpg', '.jpeg', '.gif'. Unnecessary images can be deleted or new images can be selected before uploading. Images are uploaded to the Firebase server. You can see the addresses where you can retrieve the uploaded images in the Developer Console.
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
